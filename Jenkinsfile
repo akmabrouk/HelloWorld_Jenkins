@@ -11,5 +11,6 @@ node{
    stage 'Stage 3 -package'
    sh "mvn package"
    stage 'Stage 4 -execution'
-   sh 'java -jar /home/dongna/jenkins/workspace/helloWorld/target/test-1.0.jar'
+   sh 'export JENKINS_HOME=/home/dongna/jenkins'
+   sh 'java -jar $JENKINS_HOME/workspace/helloWorld/target/test-1.0.jar'
 }
