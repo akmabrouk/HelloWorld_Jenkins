@@ -11,5 +11,5 @@ node{
    stage 'Stage 3 -package'
    sh "mvn package"
    stage 'Stage 4 -execution'
-   sh 'mvn exec:java -Dexec.mainClass="dn.helloworld.Main'
+   sh 'java -jar test-1.0.jar'
 }

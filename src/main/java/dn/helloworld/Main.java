@@ -1,4 +1,4 @@
-package dn.helloworld;
+package main.java.dn.helloworld;
 
 public class Main {
 
