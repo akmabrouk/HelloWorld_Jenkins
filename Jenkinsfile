@@ -11,5 +11,5 @@ node{
    stage 'Stage 3 -package'
    sh "mvn package"
    stage 'Stage 4 -execution'
-   sh 'java -jar ./workspace/helloWorld/target/test-1.0-shaded.jar'
+   sh 'java -jar ./workspace/helloWorld/target/test-1.0.jar'
 }
