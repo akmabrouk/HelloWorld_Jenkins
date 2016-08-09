@@ -11,5 +11,5 @@ node{
    stage 'Stage 3 -package'
    sh "mvn package"
    stage 'Stage 4 -execution'
-   java '-jar test-1.0.jar'
+   sh 'java -jar test-1.0.jar'
 }
