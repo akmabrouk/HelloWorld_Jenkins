@@ -1,5 +1,7 @@
 stage 'get mvn version'
-node('HelloWorldAgent'){sh "mvn -v"}
+node('HelloWorldAgent'){
+sh '. /home/jenkins/.bash_profile'
+sh "mvn -v"}
 
 node('HelloWorldAgent'){
    stage 'Stage 1 - SCM'
