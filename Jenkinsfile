@@ -1,7 +1,7 @@
 stage 'get mvn version'
 node{sh "mvn -v"}
 
-node{
+node('HelloWorldAgent'){
    stage 'Stage 1 - SCM'
    echo 'get HelloWorld_Java from github'
    git url: 'https://github.com/sunbeltdn/HelloWorld_Java.git'
