@@ -6,7 +6,7 @@ node('HelloWorldAgent'){
    echo 'get HelloWorld_Java from github'
    git url: 'https://github.com/sunbeltdn/HelloWorld_Java.git'
    stage 'Stage 2 - clean'
-   sh ". /home/jenkins/.bash_profile'sh"
+   sh ". /home/jenkins/.bash_profile"
    sh "export JENKINS_HOME=/home/jenkins/jenkins_agent"
    sh "cd $JENKINS_HOME/workspace/helloWorld"
    echo 'mvn clean'
