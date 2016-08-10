@@ -1,6 +1,5 @@
 node('HelloWorldAgent'){
     stage 'get mvn version'
-    sh '. /home/jenkins/.bash_profile'
     sh 'mvn -v'
 }
 
@@ -12,7 +11,6 @@ node('HelloWorldAgent'){
 
 
    stage 'Stage 2 - clean'
-   sh '. /home/jenkins/.bash_profile'
    sh 'export JENKINS_HOME=/home/jenkins/jenkins_agent'
    sh 'cd $JENKINS_HOME/workspace/helloWorld'
    echo 'mvn clean'
