@@ -1,5 +1,5 @@
 stage 'get mvn version'
-node{sh "mvn -v"}
+node('HelloWorldAgent'){sh "mvn -v"}
 
 node('HelloWorldAgent'){
    stage 'Stage 1 - SCM'
