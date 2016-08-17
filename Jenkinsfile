@@ -9,6 +9,8 @@ node('HelloWorldAgent'){
    echo 'get HelloWorld_Java from github'
    git url: 'https://github.com/sunbeltdn/HelloWorld_Java.git'
 
+   input 'ready to package and run?'
+
 
    stage 'Stage 2 - clean'
    sh 'export JENKINS_HOME=/home/jenkins/jenkins_agent'
